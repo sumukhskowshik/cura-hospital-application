@@ -1,64 +1,64 @@
-# 🏥 Cura Hospital Management System
+# 🏥 Cura Hospital Web App
 
-A modern, responsive hospital management web application developed using React, TypeScript, Tailwind CSS, and Firebase.  
-The portal allows patients to securely book appointments, explore departments, and view doctor profiles, while administrators can efficiently manage all hospital appointments and patient requests.
+A modern, role-based Hospital Management and Appointment Booking Web Application developed using React, Vite, Tailwind CSS, and Firebase.
+The portal allows patients to explore hospital departments, view doctor profiles, book appointments, and track their bookings across various specialties. Admins can manage all incoming appointment requests, update statuses, and oversee operations.
 
 ---
 
 # 🚀 Features
 
 ## 👤 Patient Features
-- User Registration & Login (Firebase Authentication)
-- Explore Hospital Departments & Specialties
-- View Doctor Profiles & Credentials
-- Secure Online Appointment Booking
-- Select Preferred Doctor, Department, Date, and Time
-- View Current Booking Status
+- User Authentication (Registration & Login)
+- Explore Medical Departments
+- View Doctor Profiles & Specialties
+- Book Appointments Online
+- View & Manage Personal Bookings
+- Responsive Patient Dashboard
 
 ## 🛠 Admin Features
-- Secure Role-Based Admin Access
-- Centralized Admin Dashboard
+- Secure Admin Authentication
+- Dedicated Admin Dashboard
 - View All Patient Appointments
-- Update Appointment Status (Pending, Confirmed, Cancelled)
-- Manually Add New Appointments for Walk-in Patients
-- Delete or Clear Completed Appointments
+- Manage Appointment Status (Confirm, Cancel, Complete)
+- Delete Invalid Appointments
+- Add New Appointments Manually
 
 ## 🎨 UI Features
-- Fully Responsive Design (Mobile, Tablet, Desktop)
-- Clean, Modern, and Professional Healthcare UI
-- Dynamic Routing and Navigation
-- Interactive Feedback and Status Alerts
-- High-Quality SVG Icons (Lucide React)
+- Modern, Responsive Healthcare UI
+- Dynamic Routing (React Router)
+- Smooth Animations (Framer Motion)
+- Tailwind CSS Styling
+- Professional Dashboard Layouts
 
 ---
 
 # 🧰 Tech Stack
 
-## Frontend
-- React.js 18+
+## Frontend Development
+- React 18
 - TypeScript
-- Tailwind CSS
-- React Router DOM
-- HTML5
-
-## Backend & Database
-- Firebase Authentication (User Identity)
-- Firebase Firestore (NoSQL Database)
-
-## Build Tools
 - Vite
-- Node.js
+- React Router DOM
+- Framer Motion (Animations)
+- Lucide React (Icons)
+
+## Styling
+- Tailwind CSS
+- PostCSS
+
+## Backend / Database & Authentication
+- Firebase Authentication (Email/Password)
+- Firebase Firestore (NoSQL Database)
 
 ---
 
 # 📁 Modules
 
-- Authentication System
-- Homepage / Informational Landing Page
-- Doctor & Department Directory
-- Appointment Booking Engine
-- Admin Dashboard 
-- Real-time Status Tracking
+- User Authentication System
+- Patient Dashboard & Booking Portal
+- Admin Management Dashboard
+- Department & Doctor Catalog
+- Appointment Management System
 
 ---
 
@@ -68,33 +68,54 @@ The portal allows patients to securely book appointments, explore departments, a
 
 ```bash
 git clone https://github.com/sumukhskowshik/cura-hospital.git
-2. Open Project Folder
-code
-Bash
+```
+
+## 2. Open Project Folder
+
+```bash
 cd cura-hospital
-3. Install Dependencies
+```
+
+## 3. Install Dependencies
 You need Node.js installed on your system. Run the following command to install the required packages:
-code
-Bash
+
+```bash
 npm install
-4. Configure Database (Firebase)
-Go to the Firebase Console
-Create a new project and enable Authentication (Email/Password) and Firestore Database.
-Update the Firebase config keys in your src/lib/firebase.ts or environment variables file.
-5. Run Application
+```
+
+## 4. Configure Database (Firebase)
+- Go to the Firebase Console
+- Create a new project and enable Authentication (Email/Password) and Firestore Database.
+- Update the Firebase config keys in your `src/lib/firebase.ts` file or `.env` file.
+
+## 5. Run Application
 Start the local development server:
-code
-Bash
+
+```bash
 npm run dev
-6. Open Browser
-Click the localhost link provided in your terminal (usually http://localhost:5173 or http://localhost:3000).
-🔮 Future Enhancements
-Email/SMS Notifications for Appointment Confirmations
-Integrated Payment Gateway for Online Consultation Fees
-Individual Doctor Logins to Manage Their Own Schedules
-Patient Medical Records & Prescription Upload System
-Telemedicine & Video Consultation Integration
-AI-Powered Chatbot for General Queries
-Password Reset/Forgot Password Functionality
-👨‍💻 Developed By
+```
+
+## 6. Open Browser
+Click the localhost link provided in your terminal (usually):
+
+```text
+http://localhost:5173
+```
+*(Or the port specified in your terminal)*
+
+---
+
+# 🔮 Future Enhancements
+- Email/SMS Notifications for Appointment Confirmations
+- Integrated Payment Gateway for Online Consultation Fees
+- Individual Doctor Logins to Manage Their Own Schedules
+- Patient Medical Records & Prescription Upload System
+- Telemedicine & Video Consultation Integration
+- AI-Powered Chatbot for General Queries
+- Password Reset/Forgot Password Functionality
+
+---
+
+# 👨‍💻 Developed By
+
 Sumukh S Kowshik
