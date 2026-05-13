@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDrrLlmL9wqRAlICOf7dEFBvAv78Q-uBkA",
+  apiKey: (import.meta.env.VITE_FIREBASE_KEY as string),
   authDomain: "cura-hospitals1.firebaseapp.com",
   projectId: "cura-hospitals1",
   storageBucket: "cura-hospitals1.firebasestorage.app",
